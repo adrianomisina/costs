@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+//React properties
+import React from 'react'
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 
-function App() {
+//pages
+import Home from './components/pages/Home'
+import Contact from './components/pages/Contact'
+import Company from './components/pages/Company'
+import NewProject from './components/pages/NewProject'
+import Projects from './components/pages/Projects'
+
+//layouts
+import Container from './components/layout/Container'
+import NavBar from './components/layout/NavBar'
+import Footer from './components/layout/Footer'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div>
+        <NavBar />
+      </div>
+
+      <Container customClass="min-height">
+        <Route exact path='/'>
+          <Home />
+        </Route>
+
+        <Route path='/projects'>
+          <Projects />
+        </Route>
+
+        <Route path='/contact'>
+          <Contact />
+        </Route>
+        
+        <Route path='/company'>
+          <Company />
+        </Route>
+
+        <Route path='/newproject'>
+          <NewProject/>
+        </Route>
+      </Container>
+
+      <Footer />
+    </Router>
+  )
 }
 
-export default App;
+export default App
