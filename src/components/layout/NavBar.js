@@ -7,10 +7,10 @@ import logo from '../../img/costs_logo.png'
 
 const NavBar = () => {
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar}> 
     <Container>
-      <Link>
-        <img src={logo} alt="Costs" className={styles.logo}/>
+      <Link to="/">
+        <img src={logo} alt="Costs" className={styles.logo} />
       </Link>
       <ul className={styles.list}>
         <li>

@@ -4,10 +4,10 @@ import styles from './NewProject.module.css'
 
 const NewProject = () => {
   return (
-    <div className={styles.new_project_container }>
+    <div className={styles.new_project_container}>
       <h1>Crie Projetos</h1>
-      <p>Crie seu projeto para depois adicionar os serviços</p>
-      <ProjectForm />
+      <p>Crie seu projeto para depois adicionar os serviços:</p>
+      <ProjectForm btnText="Criar Projeto"/>
     </div>
   )
 }

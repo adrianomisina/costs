@@ -1,0 +1,21 @@
+.form_control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form_control label {
+  margin-bottom: .6rem;
+  font-weight: bold;
+  color:#4c1a5a;
+}
+
+.form_control select {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+  outline-color: #9039a9;
+  background-color: #fff;
+}
+
+
