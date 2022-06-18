@@ -18,7 +18,7 @@ const Footer = () => {
           <FaLinkedin/>
         </li>
       </ul>
-      <p className={styles.copy_right}><spam>Costs</spam> &copy; 2022 - Todos os Direiros Reservados <spam>:)</spam></p>
+      <p className={styles.copy_right}><span>Costs</span> &copy; 2022 - Todos os Direiros Reservados <span>:)</span></p>
     </footer>
   )
 }

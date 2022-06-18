@@ -10,7 +10,7 @@ const NavBar = () => {
     <nav className={styles.navbar}>
     <Container>
       <Link>
-        <img src={logo} alt="Costs" />
+        <img src={logo} alt="Costs" className={styles.logo}/>
       </Link>
       <ul className={styles.list}>
         <li>
@@ -20,7 +20,6 @@ const NavBar = () => {
         <li>
           <Link to="/projects">Projetos</Link>
         </li>
-
 
         <li>
           <Link to="/company">Empresa</Link>
