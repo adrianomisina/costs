@@ -22,7 +22,7 @@ function NewProject() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        history.push('/projects', { message: 'Projeto criado com sucesso!' })
+        history.push('/projects', { message: 'Projeto criado com sucesso! ;)' })
       })
   }
 

@@ -4,7 +4,7 @@ import Input from '../form/Input'
 import Select from '../form/Select'
 import SubmitButton from '../form/SubmitButton'
 
-import styles from './Project.module.css'
+import styles from './ProjectForm.module.css'
 
 function ProjectForm({ handleSubmit, btnText, projectData }) {
   const [project, setProject] = useState(projectData || {})

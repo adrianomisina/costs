@@ -1,6 +1,10 @@
 {
   "projects": [
-
+    {
+      "cost": 0,
+      "services": [],
+      "id": 1
+    }
   ],
   "categories": [
     {
