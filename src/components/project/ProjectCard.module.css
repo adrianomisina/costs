@@ -1,0 +1,92 @@
+.project_card {
+  padding: 1rem;
+  border: 2px solid #4c1a5a;
+  border-radius: 5px;
+  width: 24%;
+  margin: 1rem;
+  -webkit-box-shadow: -4px 6px 15px 6px rgba(0,0,0,0.1); 
+  box-shadow: -4px 6px 15px 6px rgba(0,0,0,0.1);
+}
+
+.project_card h4 {
+  color:#ffe14d;
+  background-color: #4c1a5a;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  padding: .5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project_card p {
+  margin-bottom: 1rem;
+  color:#4c1a5a;
+}
+
+.project_card p span {
+  font-weight: 700;
+}
+
+.category_text {
+  display: flex;
+  align-items: center;
+}
+
+.category_text span {
+  display:block;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 5px;
+}
+
+.category_text .infra{
+  background-color: 	#00FA9A;
+}
+
+.category_text .desenvolvimento {
+  background-color: #4c1a5a;
+}
+
+.category_text .design {
+  background-color: #FF1493;
+}
+
+.category_text .planejamento {
+  background-color: #ffe14d;
+}
+
+.project_card_actions {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project_card_actions a,
+.project_card_actions button {
+  text-decoration: none;
+  border: none;
+  background-color: #4c1a5a;
+  color: #ffe14d;
+  font-weight: 700;
+  font-size: .9rem;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.project_card_actions svg {
+  margin-right: .5rem;
+}
+
+.project_card_actions a:hover,
+.project_card_actions button:hover {
+  background-color:#ffe14d ;
+  color: #4c1a5a;
+  transition: all .5s;
+} 

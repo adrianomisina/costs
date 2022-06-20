@@ -2,6 +2,10 @@
   padding: 2rem;
 }
 
+.project_container h1{
+  color: #4c1a5a;
+}
+
 .title_container {
   display: flex;
   justify-content: space-between;

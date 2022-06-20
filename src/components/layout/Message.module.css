@@ -1,11 +1,13 @@
 .message {
-  width: 30%;
+  width: 300px;
   padding: 1rem;
   border: 2px solid #4e2a5a;
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2rem;
+  animation: go-back 2s;
+
 }
 
 .success {
@@ -18,4 +20,31 @@
   color:#721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
+}
+
+@keyframes go-back {
+  0% {
+      transform: translateX(100px);
+      opacity:1;
+  }
+  50% {
+      transform: translateX(0px);
+  }
+
+  70% {
+    transform: translateX(80px)
+  }
+
+  100% {
+    transform: translateX(100px);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+
+
+  
 }
