@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import {useLocation} from 'react-router-dom'
 import Message from '../layout/Message'
 import Container from '../layout/Container'
+import Loading from '../layout/Loading'
 import LinkButton from '../layout/LinkButton'
 import ProjectCard from '../project/ProjectCard'
 
@@ -11,20 +12,24 @@ import styles from './Projects.module.css'
 const Projects = () => {
 
   const [projects, setProjects] = useState([])
+  const [removeLoading, setRemoveLoading] = useState(false)
 
   useEffect(()=> {
-    fetch('http://localhost:5000/projects',{
-      methods: 'GET',
-      headers: {
-        'Content-Type': 'applicattion/json',
-      }
-    })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data)
-      setProjects(data)
-    })
-    .catch((error) => console.log(error))
+    setTimeout(()=> {
+      fetch('http://localhost:5000/projects',{
+        methods: 'GET',
+        headers: {
+          'Content-Type': 'applicattion/json',
+        }
+      })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data)
+        setProjects(data)
+        setRemoveLoading(true)
+      })
+      .catch((error) => console.log(error))
+    },300)
   },[])
 
   const location = useLocation()
@@ -51,6 +56,11 @@ const Projects = () => {
               key={project.id }
               />
           ))}
+          {!removeLoading && <Loading />}
+          {removeLoading && projects.length === 0 && (
+            <p className={styles.without_proejects}>Não há projetos cadastrados<span> :( </span></p>
+          )}
+
       </Container>
     </div>
   )
