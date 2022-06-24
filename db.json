@@ -1,30 +1,8 @@
 {
   "projects": [
     {
-      "name": "Projeto Figma",
-      "budget": "12.000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "Projeto Cloud",
-      "budget": "98.000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Projeto Vue JS",
-      "budget": "5.000",
+      "name": "React com Tailwind",
+      "budget": "12.789",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -34,8 +12,8 @@
       "id": 3
     },
     {
-      "name": "Projeto React",
-      "budget": "45.789",
+      "name": "Projeto b7web",
+      "budget": "1500",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -45,22 +23,22 @@
       "id": 4
     },
     {
-      "name": "Projeto Jyra",
-      "budget": "56.000",
+      "name": "Projeto Cloud",
+      "budget": "45.789",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "1",
+        "name": "Infra"
       },
       "cost": 0,
       "services": [],
       "id": 5
     },
     {
-      "name": "Projeto CRM",
-      "budget": "78.000",
+      "name": "system",
+      "budget": "34789",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],

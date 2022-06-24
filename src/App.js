@@ -8,6 +8,7 @@ import Contact from './components/pages/Contact'
 import Company from './components/pages/Company'
 import NewProject from './components/pages/NewProject'
 import Projects from './components/pages/Projects'
+import Project from './components/pages/Project'
 
 //layouts
 import Container from './components/layout/Container'
@@ -40,6 +41,10 @@ const App = () => {
 
         <Route path='/newproject'>
           <NewProject/>
+        </Route>
+
+        <Route path='/project/:id'>
+          <Project />
         </Route>
       </Container>
 

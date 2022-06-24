@@ -1,18 +1,53 @@
 .project_container {
-  padding: 2rem;
+  margin: 4rem auto;
 }
 
 .project_container h1{
   color: #4c1a5a;
+  margin-left: 2rem;
 }
 
 .title_container {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 6rem;
   margin-bottom: 2rem;
 }
 
 .title_container a {
-  margin-right: 4.5rem;
+  margin-right: 3rem;
+} 
+
+.without_proejects {
+  color:#4c1a5a;
+  font-weight: 600;
+  font-size: 1.3rem;
+  background-color: #dbdad4;
+  padding:1rem;
+  border-radius: 5px;
+  animation: go-back 2s;
+}
+
+@keyframes go-back {
+  0% {
+      transform: translateX(100px);
+      opacity:1;
+  }
+  50% {
+      transform: translateX(0px);
+  }
+
+  70% {
+    transform: translateX(80px)
+  }
+
+  100% {
+    transform: translateX(100px);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
 }
