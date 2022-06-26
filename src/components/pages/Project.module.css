@@ -1,4 +1,4 @@
-.project_details {
+  .project_details {
   padding: 2em;
   margin: 0 2rem;
 }
@@ -7,6 +7,7 @@
 .project_details h2,
 .project_details p {
   margin-bottom: .5rem;
+  color:#4e2a5a;
 
 }
 
@@ -34,6 +35,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  border-bottom: 1.5px solid #4e2a5a;
+  margin-right: 3rem;;
 }
 
 .btn {

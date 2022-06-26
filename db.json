@@ -23,8 +23,8 @@
       "id": 4
     },
     {
-      "name": "Projeto Cloud",
-      "budget": "45.789",
+      "name": "Projeto Cloud 3",
+      "budget": "45.456",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -34,7 +34,7 @@
       "id": 5
     },
     {
-      "name": "system",
+      "name": "system project",
       "budget": "34789",
       "category": {
         "id": "2",
